@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import UserList from './UserList';
+import {UserContext} from "../contexts/UserContext"
+
 
 const User = ({users,onColorChange}) =>
 {

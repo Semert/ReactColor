@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './App.css';
 import User from "./components/User";
-import {UserContext} from "./contexts/UserContext"
+import {UserContext} from "./contexts/UserContext";
 
 
  
