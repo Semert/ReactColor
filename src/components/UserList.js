@@ -4,6 +4,7 @@ import {UserContext} from "../contexts/UserContext"
 
 const UserList = ({user,onColorChange}) =>
 {
+    // value degerini oncolorchange yaparak
     const context = useContext(UserContext)
     console.log(context)
     return(
