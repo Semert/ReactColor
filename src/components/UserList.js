@@ -1,7 +1,11 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import {UserContext} from "./contexts/UserContext"
+
 
 const UserList = ({user,onColorChange}) =>
 {
+    const context = useContext(kullanıcıContext)
+    console.log(context)
     return(
         <div style = {{backgroundColor : user.color}}> 
         <h2>{user.name}</h2>

@@ -20,7 +20,7 @@ function App() {
   }
 
   return (
-    <UserContext.Provider>
+    <UserContext.Provider value="deger">
     <div className="App">
     <User users={users} onColorChange={onColorChange}/>
     </div>
