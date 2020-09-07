@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import User from "./components/User";
+import {UserContext} from "./contexts/UserContext"
 
 
  
@@ -19,11 +20,11 @@ function App() {
   }
 
   return (
-
+    <UserContext.Provider>
     <div className="App">
     <User users={users} onColorChange={onColorChange}/>
-
     </div>
+    </UserContext.Provider>
   );
 }
 
