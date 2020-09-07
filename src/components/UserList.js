@@ -4,8 +4,10 @@ import {UserContext} from "../contexts/UserContext"
 
 const UserList = ({user,onColorChange}) =>
 {
-    // value degerini oncolorchange yaparak value=(onColorChange)
+    // value degerini oncolorchange yaparak value{onColorChange}
     // aşağıdaki method'a sadece context veya verdiğimiz ismi yazarak bu işlemi gerçekleştirebiliriz.
+    // Birden fazla değer için value = {{ users:users, changeColor:changeColor }} es6 = {{ users, changeColorr }}
+    // Kullanmak için yapmamız gereken context.changeColor ya da context.user
     const context = useContext(UserContext)
     console.log(context)
     return(
