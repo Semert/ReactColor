@@ -4,7 +4,7 @@ import {UserContext} from "./contexts/UserContext"
 
 const UserList = ({user,onColorChange}) =>
 {
-    const context = useContext(kullanıcıContext)
+    const context = useContext(UserContext)
     console.log(context)
     return(
         <div style = {{backgroundColor : user.color}}> 
